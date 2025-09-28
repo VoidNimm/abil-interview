@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jakarta International Coffee Conference</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap");
+
+      body {
+        font-family: "Montserrat", sans-serif;
+      }
+
+      .hero-bg {
+        background: #ff6342;
+      }
+
+      .yellow-bg {
+        background: #ffd166;
+      }
+
+      .decorative-border {
+        background: repeating-linear-gradient(
+          90deg,
+          #4a5568 0px,
+          #4a5568 10px,
+          #ffd166 10px,
+          #ffd166 20px,
+          #e53e3e 20px,
+          #e53e3e 30px,
+          #38b2ac 30px,
+          #38b2ac 40px
+        );
+        height: 12px;
+      }
+    </style>
+  </head>
+
+  <body class="bg-white">
+    <!-- Navbar -->
+    <nav class="w-full bg-white shadow-md py-4 px-6">
+      <div class="max-w-6xl mx-auto flex justify-between items-center">
+        <!-- Logo -->
+        <div class="flex items-center">
+          <img src="./img/logo.svg" alt="Jakarta Coffee Week Logo" />
+        </div>
+
+        <!-- Menu Desktop -->
+        <div class="hidden md:flex space-x-8">
+          <a
+            href="#"
+            class="text-gray-700 font-medium hover:text-gray-900 text-sm"
+            >Home</a
+          >
+          <a
+            href="#"
+            class="text-gray-700 font-medium hover:text-gray-900 text-sm"
+            >About</a
+          >
+          <a
+            href="#"
+            class="text-gray-700 font-medium hover:text-gray-900 text-sm"
+            >Agenda</a
+          >
+          <a
+            href="#"
+            class="text-gray-700 font-medium hover:text-gray-900 text-sm"
+            >Awards</a
+          >
+          <a
+            href="#"
+            class="text-gray-700 font-medium hover:text-gray-900 text-sm"
+            >Tentant Submission</a
+          >
+          <a
+            href="#"
+            class="text-orange-500 font-medium hover:text-orange-600 text-sm"
+            >Conferences</a
+          >
+        </div>
+
+        <div class="hidden md:block">
+          <button
+            class="bg-orange-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition-colors text-sm font-medium"
+          >
+            Get Free Ticket
+          </button>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden">
+          <button id="mobile-menu-button" class="text-black focus:outline-none">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden bg-white py-2 px-4">
+        <a href="#" class="block py-2 text-gray-700 font-medium">Home</a>
+        <a href="#" class="block py-2 text-gray-700 font-medium">About</a>
+        <a href="#" class="block py-2 text-gray-700 font-medium">Agenda</a>
+        <a href="#" class="block py-2 text-gray-700 font-medium">Awards</a>
+        <a href="#" class="block py-2 text-gray-700 font-medium"
+          >Tentant Submission</a
+        >
+        <a href="#" class="block py-2 text-orange-500 font-medium"
+          >Conferences</a
+        >
+        <button
+          class="mt-2 bg-orange-500 text-white px-4 py-2 rounded-full text-sm"
+        >
+          Get Free Ticket
+        </button>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      class="bg-[#F1603F] text-white relative min-h-[600px] overflow-hidden"
+    >
+      <div class="max-w-6xl mx-auto px-6 py-8 relative">
+        <div
+          class="absolute left-[-80px] top-[55%] -translate-y-1/2 w-[320px] z-0 lg:block hidden"
+        >
+          <img src="./img/star.png" alt="" class="w-full h-auto opacity-90" />
+        </div>
+        <!-- mobile star-->
+        <div class="lg:hidden absolute left-4 top-8 w-[100px] z-0">
+          <img src="./img/star.png" alt="" class="w-full h-auto" />
+        </div>
+        <div class="hidden lg:block absolute right-6 top-8 z-10">
+          <p class="text-base font-medium text-right">Gedung AA Maramis,</p>
+          <p class="text-base font-medium text-right">22-24 Oktober 2024</p>
+        </div>
+
+        <div
+          class="hidden lg:block absolute right-0 top-[200px] w-[360px] z-10"
+        >
+          <img src="./img/maskot.svg" alt="" class="w-full h-auto" />
+        </div>
+
+        <div
+          class="flex flex-col items-center justify-center min-h-[520px] relative z-10"
+        >
+          <!-- Date Info - Mobile -->
+          <div class="lg:hidden text-center mb-6">
+            <p class="text-base font-medium">Gedung AA Maramis,</p>
+            <p class="text-base font-medium">22-24 Oktober 2024</p>
+          </div>
+
+          <!-- Logo -->
+          <div class="w-full max-w-[400px] mx-auto">
+            <img
+              src="./img/logo.png"
+              alt="Jakarta International Coffee Conference"
+              class="w-full h-auto"
+            />
+          </div>
+
+          <!-- Mascot - Mobile -->
+          <div class="lg:hidden w-[120px] mx-auto mb-8">
+            <img src="./img/maskot.svg" alt="" class="w-full h-auto" />
+          </div>
+
+          <!-- CTA Buttons -->
+          <div class="flex justify-center gap-4 mt-20">
+            <button
+              class="border-2 border-black text-black px-8 py-3 rounded-full hover:bg-black hover:text-white transition-colors font-medium text-sm"
+            >
+              GET TICKET
+            </button>
+            <button
+              class="bg-black text-white px-8 py-3 rounded-full hover:bg-gray-800 transition-colors font-medium text-sm"
+            >
+              CONFERENCE
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Grid Pattern -->
+      <div class="hero-grid h-[180px] w-full absolute bottom-0 left-0 right-0 z-0">
+        <img src="./img/pattern-1.png" class="w-full h-auto" alt="Pattern" />
+      </div>
+    </section>
+
+    <!-- Yellow section -->
+    <section class="yellow-bg">
+      <div class="max-w-6xl mx-auto px-6 py-16">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mx-10">
+          <!-- Left content -->
+          <div>
+            <h2
+              class="text-black font-black text-4xl lg:text-5xl xl:text-6xl leading-tight"
+            >
+              WHERE COFFEE<br />
+              MEETS GROWTH
+            </h2>
+          </div>
+
+          <!-- Right image -->
+          <div class="flex justify-center lg:justify-end">
+            <img
+              src="./img/DSC02432 1.png"
+              alt="Conference"
+              class="w-80 h-64 object-cover rounded-lg"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="w-20 flex px-4">
+        <img src="./img/Ellipse 18 (1).png" alt="" />
+        <img src="./img/Ellipse 18 (1).png" alt="" />
+        <img src="./img/Ellipse 18 (1).png" alt="" />
+        <img src="./img/Ellipse 18 (1).png" alt="" />
+        <img src="./img/Ellipse 18 (1).png" alt="" />
+        <img src="./img/Ellipse 18 (1).png" alt="" />
+        <img src="./img/Ellipse 18 (1).png" alt="" />
+        <img src="./img/Ellipse 18 (1).png" alt="" />
+        <img src="./img/Ellipse 18 (1).png" alt="" />
+        <img src="./img/Ellipse 18 (1).png" alt="" />
+        <img src="./img/Ellipse 18 (1).png" alt="" />
+        <img src="./img/Ellipse 18 (1).png" alt="" />
+        <img src="./img/Ellipse 18 (1).png" alt="" />
+        <img src="./img/Ellipse 18 (1).png" alt="" />
+        <img src="./img/Ellipse 18 (1).png" alt="" />
+        <img src="./img/Ellipse 18 (1).png" alt="" />
+        <img src="./img/Ellipse 18 (1).png" alt="" />
+        <img src="./img/Ellipse 18 (1).png" alt="" />
+        <img src="./img/Ellipse 18 (1).png" alt="" />
+        <img src="./img/Ellipse 18 (1).png" alt="" />
+        <img src="./img/Ellipse 18 (1).png" alt="" />
+        <img src="./img/Ellipse 18 (1).png" alt="" />
+        <img src="./img/Ellipse 18 (1).png" alt="" />
+        <img src="./img/Ellipse 18 (1).png" alt="" />
+        <img src="./img/Ellipse 18 (1).png" alt="" />
+      </div>
+    </section>
+
+    <!-- About section -->
+    <section class="bg-gray-100 mt-0">
+      <div class="max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <!-- Left image -->
+          <div>
+            <div
+              class="h-96 lg:h-[500px] rounded-lg flex items-center justify-start"
+            >
+              <img src="./img/SVN04132 1.png" alt="" />
+            </div>
+          </div>
+
+          <!-- Right content -->
+          <div class="flex flex-col justify-center">
+            <h2 class="text-black font-black text-4xl lg:text-5xl mb-8">
+              About JICC
+            </h2>
+
+            <div class="space-y-6 text-gray-700 text-base leading-relaxed">
+              <p>
+                An international-level coffee conference and expo that will
+                showcase the evolution of Indonesia's coffee industry, which is
+                not just an industry but also part of the creative sector.
+              </p>
+
+              <p>
+                This year, Jakarta International Coffee Conference will promote
+                the development inside Indonesian coffee industry. Whether it's
+                about the origin of coffee itself or the supporting products, we
+                will try to cover and discuss it as it's also part of the
+                development of our industry. The event will span 3 days with
+                various engaging supporting content.
+              </p>
+            </div>
+
+            <!-- Bottom decorative elements -->
+            <div class="flex items-center space-x-6 mt-12">
+              <!-- Orange star -->
+              <div
+                class="w-12 h-12 bg-orange-500 flex items-center justify-center"
+              >
+                <!-- Star icon placeholder -->
+              </div>
+
+              <!-- Camera icon -->
+              <div
+                class="w-12 h-12 bg-white border-2 border-black flex items-center justify-center"
+              >
+                <!-- Camera icon placeholder -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="hero-bg text-white py-8 px-6">
+      <div class="max-w-6xl mx-auto text-center">
+        <p class="text-sm opacity-90">
+          Copyright © Jakarta International Coffee Conference 2024
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile menu toggle
+      document
+        .getElementById("mobile-menu-button")
+        .addEventListener("click", function () {
+          const mobileMenu = document.getElementById("mobile-menu");
+          mobileMenu.classList.toggle("hidden");
+        });
+    </script>
+  </body>
+</html>
