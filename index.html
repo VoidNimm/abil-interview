@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" class="overflow-x-hidden">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,7 +7,6 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap");
-
       body {
         font-family: "Montserrat", sans-serif;
       }
@@ -36,7 +35,6 @@
       }
     </style>
   </head>
-
   <body class="bg-white m-0 p-0">
     <!-- Navbar -->
     <nav class="w-full bg-white shadow-md py-4 px-6">
@@ -45,7 +43,6 @@
         <div class="flex items-center">
           <img src="./img/logo.svg" alt="Jakarta Coffee Week Logo" />
         </div>
-
         <!-- Menu Desktop -->
         <div class="hidden md:flex space-x-8">
           <a
@@ -73,14 +70,14 @@
             class="text-gray-700 font-medium hover:text-gray-900 text-sm"
             >Tentant Submission</a
           >
-          <a
-            href="#"
-            class="text-orange-500 font-medium hover:text-orange-600 text-sm"
-            >Conferences</a
-          >
         </div>
 
         <div class="hidden md:block">
+          <button
+            class="mt-2 bg-orange-500 text-white px-4 py-2 rounded-full text-sm"
+          >
+            Get Free Ticket
+          </button>
           <button
             class="bg-orange-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition-colors text-sm font-medium"
           >
@@ -117,9 +114,11 @@
         <a href="#" class="block py-2 text-gray-700 font-medium"
           >Tentant Submission</a
         >
-        <a href="#" class="block py-2 text-orange-500 font-medium"
-          >Conferences</a
+        <button
+          class="mt-2 bg-orange-500 text-white px-4 py-2 rounded-full text-sm"
         >
+          Get Free Ticket
+        </button>
         <button
           class="mt-2 bg-orange-500 text-white px-4 py-2 rounded-full text-sm"
         >
@@ -139,7 +138,7 @@
           <img src="./img/star.png" alt="" class="w-full h-auto opacity-90" />
         </div>
         <!-- mobile star-->
-        <div class="lg:hidden absolute left-4 top-8 w-[100px] z-0">
+        <div class="lg:hidden absolute left-[-48px] top-8 w-[100px] z-0">
           <img src="./img/star.png" alt="" class="w-full h-auto" />
         </div>
         <div class="hidden lg:block absolute right-6 top-8 z-10">
@@ -157,24 +156,30 @@
           class="flex flex-col items-center justify-center min-h-[520px] relative z-10"
         >
           <!-- Date Info - Mobile -->
-          <div class="lg:hidden text-center mb-6">
-            <p class="text-base font-medium">Gedung AA Maramis,</p>
-            <p class="text-base font-medium">22-24 Oktober 2024</p>
-          </div>
 
           <!-- Logo -->
-          <div class="w-full max-w-[400px] mx-auto">
+          <div class="hidden lg:block w-full max-w-[400px] mx-auto">
             <img
               src="./img/logo.png"
               alt="Jakarta International Coffee Conference"
               class="w-full h-auto"
             />
           </div>
+          <!-- logo mobel -->
+          <div class="lg:hidden w-full max-w-[300px] mx-auto">
+            <img
+              src="./img/logo.png"
+              alt="Jakarta International Coffee Conference"
+              class="w-full h-auto"
+            />
+          </div>
+          <div class="lg:hidden text-center mt-10">
+            <p class="text-base font-medium">Gedung AA Maramis,</p>
+            <p class="text-base font-medium">22-24 Oktober 2024</p>
+          </div>
 
           <!-- Mascot - Mobile -->
-          <div class="lg:hidden w-[120px] mx-auto mb-8">
-            <img src="./img/maskot.svg" alt="" class="w-full h-auto" />
-          </div>
+          <div class="lg:hidden w-[120px] mx-auto mb-8"></div>
 
           <!-- CTA Buttons -->
           <div class="flex justify-center gap-4 mt-20">
@@ -193,9 +198,7 @@
       </div>
 
       <!-- Bottom Grid Pattern -->
-      <div
-        class="hero-grid h-[180px] w-full absolute bottom-0 left-0 right-0 z-0"
-      >
+      <div class="hero-grid w-full absolute bottom-0 left-0 right-0 z-0">
         <img src="./img/pattern-1.png" class="w-full h-auto" alt="Pattern" />
       </div>
     </section>
@@ -205,7 +208,7 @@
       <div class="mx-auto grid grid-cols-1 lg:grid-cols-2 gap-0">
         <!-- KIRI: panel kuning + scallop -->
         <div
-          class="relative flex items-center justify-center bg-[#E7C171] h-40 lg:h-56"
+          class="relative overflow-visible flex items-center justify-center bg-[#E7C171] h-40 lg:h-56"
         >
           <h2
             class="text-black font-black text-xl sm:text-2xl lg:text-3xl text-center leading-tight"
@@ -214,58 +217,82 @@
           </h2>
 
           <!-- Scallop di bawah panel kuning
-          <div
-            class="pointer-events-none absolute inset-x-0 bottom-0 h-3 translate-y-5 bg-bottom bg-repeat-x bg-[length:24px_12px] bg-[url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http://www.w3.org/2000/svg%22%20viewBox%3D%220%200%2020%2010%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20d%3D%22M0%200%20C%205%2010%2C%2015%2010%2C%2020%200%20V10%20H0%20Z%22%20fill%3D%22%23ffffff%22/%3E%3C/svg%3E')]"
-          ></div>
-        </div> -->
+      <div
+        class="pointer-events-none absolute inset-x-0 bottom-0 h-3 translate-y-5 bg-bottom bg-repeat-x bg-[length:24px_12px] bg-[url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http://www.w3.org/2000/svg%22%20viewBox%3D%220%200%2020%2010%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20d%3D%22M0%200%20C%205%2010%2C%2015%2010%2C%2020%200%20V10%20H0%20Z%22%20fill%3D%22%23ffffff%22/%3E%3C/svg%3E')]"
+      ></div>
+    </div> -->
 
-        <div class="w-20 flex absolute inset-x-0 mb-6 -bottom-[35px] -translate-x-1/2 space-x-2">
-        <img src="./img/Ellipse 18 (1).png" alt="" />
-        <img src="./img/Ellipse 18 (1).png" alt="" />
-        <img src="./img/Ellipse 18 (1).png" alt="" />
-        <img src="./img/Ellipse 18 (1).png" alt="" />
-        <img src="./img/Ellipse 18 (1).png" alt="" />
-        <img src="./img/Ellipse 18 (1).png" alt="" />
-        <img src="./img/Ellipse 18 (1).png" alt="" />
-        <img src="./img/Ellipse 18 (1).png" alt="" />
-        <img src="./img/Ellipse 18 (1).png" alt="" />
-        <img src="./img/Ellipse 18 (1).png" alt="" />
-        <img src="./img/Ellipse 18 (1).png" alt="" />
-        <img src="./img/Ellipse 18 (1).png" alt="" />
-        <img src="./img/Ellipse 18 (1).png" alt="" />
-        <img src="./img/Ellipse 18 (1).png" alt="" />
-        <img src="./img/Ellipse 18 (1).png" alt="" />
-        <img src="./img/Ellipse 18 (1).png" alt="" />
-        <img src="./img/Ellipse 18 (1).png" alt="" />
-        <img src="./img/Ellipse 18 (1).png" alt="" />
-        <img src="./img/Ellipse 18 (1).png" alt="" />
-        <img src="./img/Ellipse 18 (1).png" alt="" />
-        <img src="./img/Ellipse 18 (1).png" alt="" />
-        <img src="./img/Ellipse 18 (1).png" alt="" />
-        <img src="./img/Ellipse 18 (1).png" alt="" />
-        <img src="./img/Ellipse 18 (1).png" alt="" />
+          <!-- elips dekstop  -->
+          <div
+            class="lg:flex hidden w-20 flex absolute inset-x-0 mb-6 -bottom-[35px] -translate-x-1/2 space-x-2"
+          >
+            <img src="./img/Ellipse 18 (1).png" alt="" />
+            <img src="./img/Ellipse 18 (1).png" alt="" />
+            <img src="./img/Ellipse 18 (1).png" alt="" />
+            <img src="./img/Ellipse 18 (1).png" alt="" />
+            <img src="./img/Ellipse 18 (1).png" alt="" />
+            <img src="./img/Ellipse 18 (1).png" alt="" />
+            <img src="./img/Ellipse 18 (1).png" alt="" />
+            <img src="./img/Ellipse 18 (1).png" alt="" />
+            <img src="./img/Ellipse 18 (1).png" alt="" />
+            <img src="./img/Ellipse 18 (1).png" alt="" />
+            <img src="./img/Ellipse 18 (1).png" alt="" />
+            <img src="./img/Ellipse 18 (1).png" alt="" />
+            <img src="./img/Ellipse 18 (1).png" alt="" />
+            <img src="./img/Ellipse 18 (1).png" alt="" />
+            <img src="./img/Ellipse 18 (1).png" alt="" />
+            <img src="./img/Ellipse 18 (1).png" alt="" />
+            <img src="./img/Ellipse 18 (1).png" alt="" />
+            <img src="./img/Ellipse 18 (1).png" alt="" />
+            <img src="./img/Ellipse 18 (1).png" alt="" />
+            <img src="./img/Ellipse 18 (1).png" alt="" />
+            <img src="./img/Ellipse 18 (1).png" alt="" />
+            <img src="./img/Ellipse 18 (1).png" alt="" />
+            <img src="./img/Ellipse 18 (1).png" alt="" />
+            <img src="./img/Ellipse 18 (1).png" alt="" />
+          </div>
+
+          <!-- elips mobile  -->
+          <div
+            class="flex lg:hidden w-20 flex absolute inset-x-0 mb-6 -bottom-[35px] -translate-x-1/2 space-x-[7px]"
+          >
+            <img src="./img/Ellipse 18 (1).png" alt="" />
+            <img src="./img/Ellipse 18 (1).png" alt="" />
+            <img src="./img/Ellipse 18 (1).png" alt="" />
+            <img src="./img/Ellipse 18 (1).png" alt="" />
+            <img src="./img/Ellipse 18 (1).png" alt="" />
+            <img src="./img/Ellipse 18 (1).png" alt="" />
+            <img src="./img/Ellipse 18 (1).png" alt="" />
+            <img src="./img/Ellipse 18 (1).png" alt="" />
+            <img src="./img/Ellipse 18 (1).png" alt="" />
+            <img src="./img/Ellipse 18 (1).png" alt="" />
+            <img src="./img/Ellipse 18 (1).png" alt="" />
+            <img src="./img/Ellipse 18 (1).png" alt="" />
+            <img src="./img/Ellipse 18 (1).png" alt="" />
+            <img src="./img/Ellipse 18 (1).png" alt="" />
+            <img src="./img/Ellipse 18 (1).png" alt="" />
+          </div>
         </div>
-      </div>
 
         <!-- KANAN: gambar -->
         <div class="h-40 lg:h-56">
           <img
             src="./img/DSC02432 1.png"
             alt="Conference"
-            class="w-full h-full object-cover"
+            class="block w-full h-full object-cover"
           />
         </div>
       </div>
     </section>
 
     <!-- About section -->
-    <section class="bg-gray-100 mt-0">
-      <div class="max-w-8xl">
+    <section class="-mt-16">
+      <div class="max-w-8xl mt-[72px]">
         <div class="grid grid-cols-1 lg:grid-cols-2">
           <!-- Left image -->
           <div>
             <div
-              class="h-96 lg:h-[500px] rounded-lg flex items-center justify-start"
+              class="hidden lg:flex h-96 lg:h-[500px] rounded-lg flex items-center justify-start"
             >
               <img src="./img/SVN04132 1.png" alt="" />
             </div>
@@ -294,23 +321,27 @@
               </p>
             </div>
 
-            <!-- Bottom decorative elements -->
-            <div class="flex justify-around items-center space-x-6 mt-12">
+            <div
+              class="flex justify-around items-center space-x-6 mt-12 mb-[26px]"
+            >
               <!-- Orange star -->
-              <div  
-                class="w-12 h-12 flex items-center justify-center"
-              >
-               <img src="./img/half-star.png" alt="">
+              <div class="w-32 h-32 flex items-center justify-center">
+                <img src="./img/half-star.png" alt="" />
               </div>
 
               <!-- Camera icon -->
-              <div
-                class="w-12 h-12 b flex items-center justify-center"
-              >
-               <img src="./img/icon-2.png" alt="">
+              <div class="w-32 h-32 b flex items-center justify-center">
+                <img src="./img/icon-2.png" alt="" />
               </div>
             </div>
+            <!-- Bottom decorative elements -->
           </div>
+        </div>
+        <!-- image mobile -->
+        <div
+          class="lg:hidden h-[300px] sm:w-16 lg:h-[500px] rounded-lg flex items-center justify-start"
+        >
+          <img src="./img/SVN04132 1.png" alt="" />
         </div>
       </div>
     </section>
